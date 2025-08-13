@@ -1,5 +1,5 @@
 --list all tables
 SELECT table_name
 FROM information_schema.tables
-WHERE table_schema = DATABASE()
-    AND table_type = 'BASE TABLE';
+WHERE table_schema = DATABASE();
+   
