@@ -26,12 +26,12 @@ CREATE TABLE IF NOT EXISTS Customers (
 );
 
 -- Create orders table
-CREATE TABLE IF NOT EXISTS orders (
+CREATE TABLE IF NOT EXISTS Oders (
     order_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT,
     order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
     status VARCHAR(20),
-    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 -- Create order_details table
